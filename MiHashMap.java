@@ -76,4 +76,19 @@ public class MiHashMap
     public boolean isEmpty(){
         return(claves.length == 0);
     }
+    
+    /**
+     * Devuelve el número de elementos del mapa.
+     */
+    public int size(){
+        return claves.length;
+    }
+    
+    /**
+     * Vacia el mapa
+     */
+    public void clear(){
+        claves = new String[0];
+        valores = new int[0];
+    }
 }
